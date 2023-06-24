@@ -1,0 +1,246 @@
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+    overflow:hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+	width: calc(100vw + 18px);
+	overflow: auto;
+}
+body{
+    margin: 0;
+    /*背景顏色*/
+    background: #2e3c7bf3;
+    background: linear-gradient(99999deg,#2e3c7bf3,rgb(105, 102, 175));
+}
+
+/*------------------標題-------------------*/
+h6{
+    /*置中*/
+    text-align: center;
+    /*三個參數時,代表 上 左右 下*/
+    /*兩個參數時,代表 上下 左右*/
+    margin: 40px 0 40px;
+    /*字體大小 顏色 陰影*/
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+/*------------------商標------------------*/
+
+span{
+    /*改變顏色*/
+    color: #2bd6b4;
+}
+/*------------------導覽列------------------*/
+nav{
+    /*導覽列空間*/
+    margin: 25px auto 0;
+    /*位置*/
+    position: relative;
+    /*寬 高*/
+    width: 590px;
+    height: 50px;
+    /*背景顏色*/
+    background-color: #34495e;
+    /*圓角*/
+    border-radius: 10px;
+    /*字體大小*/
+    font-size: 0;
+}
+/*------------------導覽列超連結------------------*/
+nav a{
+    /*行高*/
+    line-height: 50px;
+    /*高度*/
+    height: 100%;
+    /*字體大小*/
+    font-size: 16px;
+    /*顯示樣式*/
+    display: inline-block;
+    /*位置*/
+    position: relative;
+    /*z軸*/
+    z-index: 1;
+    /*文字特效*/
+    text-decoration: none;
+    /*置中*/
+    text-align: center;
+    /*字體顏色*/
+    color: #fff;
+    /*滑鼠樣式*/
+    cursor: pointer;
+}
+/*------------------導覽列的類別animation------------------*/
+nav .animation{
+    /*位置*/
+    position: absolute;
+    /*位置定位點*/
+    top: 0;
+    /*高度*/
+    height: 100%;
+    /*z軸 在超連結字體後面*/
+    z-index: 0;
+    /*圓角*/
+    border-radius: 10px;
+    transition: .5s;
+}
+/*------------------導覽列的個數順序------------------*/
+a:nth-child(1){
+    width: 100px;
+}
+a:nth-child(2){
+    width: 110px;
+}
+a:nth-child(3){
+    width: 100px;
+}
+a:nth-child(4){
+    width: 160px;
+}
+a:nth-child(5){
+    width: 120px;
+}
+/*------------------#------------------*/
+nav a:nth-child(1):hover ~ .animation{
+    width: 100px;
+    left: 0px;
+    background-color: #2bd6b4;
+}
+nav a:nth-child(2):hover ~ .animation{
+    width: 110px;
+    left: 100px;
+    background-color: #ef3013;
+}nav a:nth-child(3):hover ~ .animation{
+    width: 100px;
+    left: 210px;
+    background-color: #4769da;
+}nav .start,a:nth-child(4):hover ~ .animation{
+    width: 160px;
+    left: 310px;
+    background-color: #b83adf;
+}nav a:nth-child(5):hover ~ .animation{
+    width: 120px;
+    left: 470px;
+    background-color: #e59e34;
+}
+
+/*----------------------------------------------------*/
+.back-to-top {
+    position: fixed; /* 位置是固定的 */
+    bottom: 20px; /* 顯示在頁面底部 */
+    right: 0px; /* 顯示在頁面的右邊 */
+    z-index: 99; /* 確保不被其他功能覆蓋 */
+    border: 1px solid #5cb85c; /* 顯示邊框 */
+    outline: none; /* 不顯示外框 */
+    background-color: #fff; /* 設置背景背景顏色 */
+    color: #5cb85c; /* 設置文本顏色 */
+    cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+    padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+    border-radius: 10px; /* 增加圓角 */
+    width: auto;
+    }
+.back-to-top:hover {
+    background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+    color: #fff;
+}
+/*-----------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 7.5px;
+}
+/*圖片美化*/
+td img{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 5px solid #ced0d2;
+}
+
+/*表格基礎設定*/
+.aaa{
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    min-width: 1000px;
+    table-layout: fixed;
+}
+
+/*表格內樣式設定*/
+th{
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+}
+
+th,td{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/*奇,偶數列顏色差別*/
+tr:nth-child(odd){
+    background-color: #edeef1;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+/*滑鼠滑過後樣式變化*/
+tr:hover{
+    background-color: #fff;
+    color: #44b478;
+    cursor: pointer;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+}
+
+td button:nth-child(1){
+    background-color: #0298cf;
+}
+
+td button:nth-child(2){
+    background-color: #f00;
+}
+
+i:link{
+    color: #fff;
+}
+i:active{
+    color: #b83adf;
+    transition: .1s;
+}
+/*---------------------------------------------------------------*/
+h1{
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}

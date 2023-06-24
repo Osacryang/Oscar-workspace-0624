@@ -1,0 +1,153 @@
+body{
+    /*格式歸零*/
+    margin: 0;
+    padding: 0;
+    /*字體*/
+    font-family: montserrat;
+    /*背景漸層*/
+    background: linear-gradient(120deg,rgb(27, 156, 196),rgb(124, 48, 217));
+    /*調整高度*/
+    height: 100vh;
+    /*溢出版面的東西隱藏*/
+    overflow: hidden;
+}
+
+.center{
+    /*單一元素置中*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*背景 圓角 寬度*/
+    background: #fff;
+    border-radius: 20px;
+    width: 450px;
+}
+
+.center h1{
+    /*置中 底部多一點空間 標線底部實心線*/
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form{
+    /*左右多一點空間 顯示方法*/
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.txt{
+    /*相對位置 上下留空間 底部框線*/
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #adadad;
+}
+
+.txt input{
+    /*寬度 高度 左右留白*/
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 16px;
+    /*取消框線 背景 邊界*/
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    /*漸變時間*/
+    transition: .3s;
+}
+
+.txt span::before{
+    /*必要元素*/
+    content: '';
+    /*位置*/
+    position: absolute;
+    top: 40px;
+    left: 0;
+    /*寬跟高*/
+    width: 0%;
+    height: 2px;
+    /*背景顏色*/
+    background: #2677c3;
+    /*漸變時間*/
+    transition: .3s;
+}
+
+.txt input:focus ~ label,
+.txt input:valid ~ label{
+    /*A元素事件發生,B元素發生改變*/
+    top: -5px;
+    color: #2677c3;
+}
+
+.txt input:focus ~ span::before,
+.txt input:valid ~ span::before{
+    /*A元素事件發生,B元素發生改變*/
+    content: '';
+    width: 100%;
+
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+}
+
+.pass a{
+    color: #adadad;
+    text-decoration: none;
+}
+
+.pass a:hover{
+    text-decoration: underline;
+    /*我自己想改的字體顏色變化*/
+    color: #2677c3;
+}
+
+input[type="submit"]{
+    /*寬高*/
+    width: 100%;
+    height: 50px;
+    /*底線 背景顏色 圓角*/
+    border: 1px solid;
+    background: #2677c3;
+    border-radius: 20px;
+    /*字體顏色 字體大小*/
+    color: #fff;
+    font-size: 16px;
+    /*滑鼠樣式 取消邊界*/
+    cursor:pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    /*改變顏色 漸變時間*/
+    border-color: #2677c3;
+    transition: .5s;
+}
+
+.link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.link a{
+    color: #2677c3;
+    text-decoration: none;
+}
+
+.link a:hover{
+    text-decoration: underline;
+}

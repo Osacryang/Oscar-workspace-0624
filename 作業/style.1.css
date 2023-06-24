@@ -1,0 +1,350 @@
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+	width: calc(100vw + 18px);
+	overflow: auto;
+}
+body{
+    /*背景顏色*/
+    background: #2e3c7bf3;
+    background: linear-gradient(99999deg,#2e3c7bf3,rgb(105, 102, 175));
+}
+/*------------------標題-------------------*/
+h6{
+    /*置中*/
+    text-align: center;
+    /*三個參數時,代表 上 左右 下*/
+    /*兩個參數時,代表 上下 左右*/
+    margin: 40px 0 40px;
+    /*字體大小 顏色 陰影*/
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+/*------------------商標------------------*/
+h4{
+    /*位置*/
+    position: absolute;
+    /*放在底部*/
+    bottom: -150px;
+    /*寬度 置中*/
+    width: 100%;
+    text-align: center;
+    /*字體顏色 大小*/
+    color: #fff;
+    font-size: 16px;
+}
+h2{
+    /*位置*/
+    position: absolute;
+    /*放在底部*/
+    bottom: 235px;
+    /*寬度 置中*/
+    width: 100%;
+    text-align: center;
+    /*字體顏色 大小*/
+    color: #fff;
+    font-size: 21px;
+}
+h3{
+    /*位置*/
+    position: absolute;
+    /*放在底部*/
+    bottom: -95px;
+    /*寬度 置中*/
+    width: 100%;
+    text-align: center;
+    /*字體顏色 大小*/
+    color: #fff;
+    font-size: 17px;
+}
+span{
+    /*改變顏色*/
+    color: #2bd6b4;
+}
+/*------------------導覽列------------------*/
+nav{
+    /*導覽列空間*/
+    margin: 25px auto 0;
+    /*位置*/
+    position: relative;
+    /*寬 高*/
+    width: 590px;
+    height: 50px;
+    /*背景顏色*/
+    background-color: #34495e;
+    /*圓角*/
+    border-radius: 10px;
+    /*字體大小*/
+    font-size: 0;
+}
+/*------------------導覽列超連結------------------*/
+nav a{
+    /*行高*/
+    line-height: 50px;
+    /*高度*/
+    height: 100%;
+    /*字體大小*/
+    font-size: 16px;
+    /*顯示樣式*/
+    display: inline-block;
+    /*位置*/
+    position: relative;
+    /*z軸*/
+    z-index: 1;
+    /*文字特效*/
+    text-decoration: none;
+    /*置中*/
+    text-align: center;
+    /*字體顏色*/
+    color: #fff;
+    /*滑鼠樣式*/
+    cursor: pointer;
+}
+/*------------------導覽列的類別animation------------------*/
+nav .animation{
+    /*位置*/
+    position: absolute;
+    /*位置定位點*/
+    top: 0;
+    /*高度*/
+    height: 100%;
+    /*z軸 在超連結字體後面*/
+    z-index: 0;
+    /*圓角*/
+    border-radius: 10px;
+    transition: .5s;
+}
+/*------------------導覽列的個數順序------------------*/
+a:nth-child(1){
+    width: 100px;
+}
+a:nth-child(2){
+    width: 110px;
+}
+a:nth-child(3){
+    width: 100px;
+}
+a:nth-child(4){
+    width: 160px;
+}
+a:nth-child(5){
+    width: 120px;
+}
+/*------------------#------------------*/
+nav .start,a:nth-child(1):hover ~ .animation{
+    width: 100px;
+    left: 0px;
+    background-color: #2bd6b4;
+}
+nav a:nth-child(2):hover ~ .animation{
+    width: 110px;
+    left: 100px;
+    background-color: #ef3013;
+}nav a:nth-child(3):hover ~ .animation{
+    width: 100px;
+    left: 210px;
+    background-color: #4769da;
+}nav a:nth-child(4):hover ~ .animation{
+    width: 160px;
+    left: 310px;
+    background-color: #b83adf;
+}nav a:nth-child(5):hover ~ .animation{
+    width: 120px;
+    left: 470px;
+    background-color: #e59e34;
+}
+/*------------------絕對配置>訪客登入------------------*/
+/*#pos{
+    margin: 0;
+    background: rgb(166, 171, 244);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#pos a:hover{
+    text-decoration: underline;
+    color: #5b9ad5;
+}*/
+
+/*-----------------------圖片置中----------------------------*/
+/*.iiu1{
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 500px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}*/
+
+.imgl{
+    background: #2e3c7b87;
+    margin: 0;
+    position: absolute;
+    float: center;
+    right: 500px;
+    z-index: 0;
+    bottom: 300px;
+    border-radius: 25px;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+h3 a:link{
+    text-decoration:none;
+}
+h3 a{
+    color: #ffffff;
+}
+/*------------------------------------------------------------*/
+.aaa{
+    display: flex;
+}
+
+.card{
+    height: 250px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.intro1{
+    width: 340px;
+    height: 70px;
+    padding: 5px;
+    position: absolute;
+    background: rgb(30,30,30,0.7);
+    color: #fff;
+    bottom: -50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .5s;
+}
+
+.intro2{
+    width: 340px;
+    height: 70px;
+    padding: 5px;
+    position: absolute;
+    background: rgb(30,30,30,0.7);
+    color: #fff;
+    bottom: -50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .5s;
+}
+
+h1{
+    margin: 5px;
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro1{
+    height: 240px;
+    bottom: -70px;
+    background: rgb(30,30,30,0.7);
+}
+
+.card:hover .intro2{
+    height: 240px;
+    bottom: -70px;
+    background: rgb(30,30,30,0.7);
+}
+
+.card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.aaa1{
+    margin: 0;
+    position: absolute;
+    right: 257px;
+    z-index: 0;
+    bottom: 25px;
+    border-radius: 25px;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    transition: .5s;
+
+
+}
+.aaa2{
+    margin: 0;
+    position: absolute;
+    right: 702px;
+    z-index: 0;
+    bottom: 25px;
+    border-radius: 25px;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    transition: .5s;
+
+
+}
+/*----------------------------------------------------*/
+.back-to-top {
+    position: fixed; /* 位置是固定的 */
+    bottom: 20px; /* 顯示在頁面底部 */
+    right: 0px; /* 顯示在頁面的右邊 */
+    z-index: 99; /* 確保不被其他功能覆蓋 */
+    border: 1px solid #5cb85c; /* 顯示邊框 */
+    outline: none; /* 不顯示外框 */
+    background-color: #fff; /* 設置背景背景顏色 */
+    color: #5cb85c; /* 設置文本顏色 */
+    cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+    padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+    border-radius: 10px; /* 增加圓角 */
+    }
+.back-to-top:hover {
+    background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+    color: #fff;
+}

@@ -1,0 +1,182 @@
+@charset "utf-8";
+            p {
+                color: #FFF;
+                font-family: 'Noto Sans TC', sans-serif;
+
+            }
+            H1 {
+                color: #4B0091;
+                width: 300px;
+                margin: 40px auto;
+                padding: 30px;
+                border: 5px solid #b5dbff;
+                background-color: #b0c8f5;
+                font-size: 150%;
+                text-align: center;
+                font-family: Comic Sans MS,arial,helvetica,sans-serif;
+                border-radius: 10px;
+                text-shadow: 1px 1px 2px #000;
+                box-shadow: 2px 3px 2px #000562;
+            }
+            H2 {
+                color: #6F00D2;
+                border: 5px dotted #b5dbff;
+                border-left: 20px solid #57c0f0;
+                background-color: #b0c8f5;
+                width: 500px;
+                width: 100%;
+                margin: 0px auto;
+                border-radius: 5px;
+
+            }
+            li {
+                color: 	#D200D2
+            }
+        a:link
+        {
+            text-decoration:#08abf7;
+            background-color: none;
+        }
+        /*a:visited
+        {
+            color: #FFA1A1;
+            background-color: none;
+        }*/
+        body 
+        {
+            background-color: #2e3c7bf3;
+            background: linear-gradient(120deg,#2e3c7bf3,rgb(105, 102, 175));
+        }
+        .menu{
+            color: #fff;
+            font-size: 26px;
+            text-align: center;
+            
+        }
+        .menu a:link{
+            color: #fff;
+        }
+        .menu a:visited{
+            color: #FFA1A1;
+        }
+        #A1{
+            width:1000px;
+            margin:30px auto;
+            padding: 30px 70px;
+            text-align: center;
+            background-color: #327bc0;
+        }
+        .menu li { 
+            list-style-type: none;
+            display: inline-block;
+            width: 200px;
+            margin: 10px 30px;
+        }
+        .menu a {
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            width: 180px;
+            color: #b0c8f5;
+            background: #16b3fc;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .menu a:hover{
+            background-color : #186b92;
+        }
+        a {
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            width: 180px;
+            color: #b0c8f5;
+            background: #05b1b1;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color : #0b7e78;
+        }
+        
+        a:visited
+        {
+            color: #FFA1A1;
+            background-color: none;
+        }
+        .gh1 {
+            text-align:right;
+            clear: both;
+        }
+        .gh2 {
+            text-align: left;
+            clear: both;
+        }
+        .imgl{
+            float: left;
+        }
+        .imgr{
+            float: right;
+        }
+        .Table{
+            width: 100%;
+            margin-bottom: 30px;
+            border: 2px solid #08abf7;
+            border-collapse: collapse;
+        }
+        .Table th,
+        .Table td{
+            padding: 10px 20px;
+            border: 1px solid #57c0f0;
+        }
+        .Table th{
+            width: 10em;
+            background-color: #d9e4fc;
+            text-align: left;
+        }
+        .Table input[type="text"],
+        .Table input[type="email"],
+        .Table textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #186b92;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        .Table input[type="text"]:focus,
+        .Table input[type="email"]:focus,
+        .Table textarea:focus{
+            background-color: aliceblue;
+            outline: none;
+            border-left: 2.5px solid rgb(247,182,3);
+        }
+        input,
+        textarea,
+        select{
+            cursor: pointer;
+        }
+
+        .btn{
+            text-align: center;
+        }
+
+        .btn input{
+            width: 200px;
+            margin: 0 10px;
+            padding: 10px;
+            background: #8ffafa;
+            border: 2px solid #58e5de;
+            border-radius:  10px;
+            font-size: 1em;
+        }
+
+        .btn input[type="submit"]{
+            background: #6fccf8;
+        }
+
+        .btn input:hover{
+            opacity: 0.5;
+        }
+        .ppp1{
+            margin-bottom: 30spx;
+        }
